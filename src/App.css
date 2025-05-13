@@ -1,0 +1,399 @@
+/* Estilos generales para la aplicación */
+.App {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  background-color: #F4F6F8; /* Fondo suave */
+}
+
+/* Estilo para el header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 30px;
+  background-color: #2C3E50; /* Color más elegante */
+  color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+/* Logo en el header */
+.logo {
+  flex: 1; /* Ocupa espacio disponible */
+  text-align: left;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  color: #BDC3C7;
+  margin: 5px 0;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Ajusta los botones en varias líneas si es necesario */
+  justify-content: center;
+}
+
+.navbar button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 22px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar button:hover {
+  background-color: white;
+  color: #2C3E50;
+  transform: scale(1.05);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones */
+.section {
+  padding: 90px 20px 40px;
+  margin-top: 100px;
+  text-align: center;
+  background-color: #ECF0F1;
+  border-bottom: 2px solid #BDC3C7;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las tarjetas de proyectos */
+.projects-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  min-width: 270px;
+  max-width: 320px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden; /* Para evitar que el contenido se salga de los bordes redondeados */
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.7rem;
+  color: #2C3E50;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #7F8C8D;
+  margin: 5px;
+}
+
+.card .credentials {
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  background-color: #bdc3c727;
+  border-radius: 5%;
+}
+
+.card .credentials h4{
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card a{
+  width: 100%;
+}
+.card a button {
+  background-color: #3498DB;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+
+.card a button:hover {
+  background-color: #2980B9;
+}
+
+/* Estilos adicionales para la tarjeta de proyecto */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Barras de habilidades técnicas */
+.skills-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+/* Estilos para el carrusel de habilidades */
+.skills-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-card .skill-name {
+  font-size: 1rem;
+  color: #2C3E50;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.progress-container {
+  background-color: #BDC3C7;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 0;
+  background-color: #68A063;
+}
+
+/* Estilos para la sección de About Me */
+.about-me {
+  background-color: #f4f6f9;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 80px;
+  position: relative;
+}
+
+/* Imagen de perfil */
+.about-me .profile-img {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 4px solid #007BFF; /* Borde alrededor de la imagen */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de la sección */
+.about-me h2 {
+  font-size: 2.5rem;
+  color: #34495E;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Subtítulo */
+.about-me p {
+  font-size: 1.1rem;
+  color: #7F8C8D;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Botón de acción */
+.about-me .cta-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.about-me .cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Animación de Fade-in */
+.about-me .fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para la sección de contacto */
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.contact-button {
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
+
+.contact-button span {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Estilos específicos para LinkedIn */
+.contact-button.linkedin {
+  background-color: #0077b5;
+}
+
+.contact-button.linkedin:hover {
+  background-color: #005a8b;
+}
+
+/* Estilos específicos para GitHub */
+.contact-button.github {
+  background-color: #000;
+}
+
+.contact-button.github:hover {
+  background-color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center;
+    padding: 15px;
+  }
+
+  .logo {
+    text-align: center; /* Centra el logo */
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    justify-content: center;
+    gap: 10px; /* Reduce el espacio entre botones */
+  }
+
+  .navbar button {
+    font-size: 1rem;
+    padding: 10px 15px; /* Reduce el tamaño de los botones */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del texto del logo */
+  }
+
+  .logo p {
+    font-size: 1rem; /* Reduce el tamaño del subtítulo */
+  }
+
+  .navbar button {
+    font-size: 0.9rem;
+    padding: 8px 12px; /* Ajusta aún más los botones */
+  }
+}
