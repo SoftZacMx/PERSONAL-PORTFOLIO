@@ -27,7 +27,7 @@ function ProjectsSection() {
                 <div className="card">
                     <h3>SIDGDER</h3>
                     <p>Comprehensive management system for restaurants.</p>
-                    <a href="https://softzac-sidgder-demo.up.railway.app" target="_blank" rel="noopener noreferrer">
+                    <a href="https://sdigder-frontend-example.onrender.com" target="_blank" rel="noopener noreferrer">
                         <button>See More</button>
                     </a>
                     <section className="credentials">
@@ -39,7 +39,7 @@ function ProjectsSection() {
                 <div className="card">
                     <h3>SIDGDEP</h3>
                     <p>Comprehensive system for gym management.</p>
-                    <a href="https://softzac-academies-demo.up.railway.app" target="_blank" rel="noopener noreferrer">
+                    <a href="https://academies-demo-api.onrender.com" target="_blank" rel="noopener noreferrer">
                         <button>See More</button>
                     </a>
                     <section className="credentials">
