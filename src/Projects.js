@@ -39,7 +39,7 @@ function ProjectsSection() {
                 <div className="card">
                     <h3>SIDGDEP</h3>
                     <p>Comprehensive system for gym management.</p>
-                    <a href="https://academies-demo-api.onrender.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://academies-demo-frontned.onrender.com" target="_blank" rel="noopener noreferrer">
                         <button>See More</button>
                     </a>
                     <section className="credentials">
