@@ -14,11 +14,11 @@ import mysqlLogo from './assets/mysql.png';
 import awsLogo from './assets/aws.png';
 
 const skills = [
-  { name: 'React', logo: reactLogo, level: 55 },
-  { name: 'Node.js', logo: nodejsLogo, level: 80 },
-  { name: 'Angular', logo: angularLogo, level: 80 },
-  { name: 'MySQL', logo: mysqlLogo, level: 80 },
-  { name: 'AWS', logo: awsLogo, level: 50 },
+  { name: 'React', logo: reactLogo, level: 60 },
+  { name: 'Node.js', logo: nodejsLogo, level: 90 },
+  { name: 'Angular', logo: angularLogo, level: 85 },
+  { name: 'MySQL', logo: mysqlLogo, level: 85 },
+  { name: 'AWS', logo: awsLogo, level: 55 },
 ];
 
 const Skills = () => {
